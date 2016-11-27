@@ -14,12 +14,17 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    
+    <!-- Custom styles for carousel -->
     <link href="css/carousel.css" rel="stylesheet">
     
     <!-- Advanced search -->
     <link href="css/advancedsearch.css" rel="stylesheet">
+      
+    <!-- Multilevel dropdown -->
+    <link href="css/boostrap-multilevel-dropdown.css" rel="stylesheet">
+    
+    <!-- Multilevel dropdown -->
+    <link href="css/login.css" rel="stylesheet">
       
   </head>
 <!-- NAVBAR
@@ -55,8 +60,48 @@
                 <li><a href="nouveautes.html">Nouveautés</a></li>
                 <li class="dropdown">
                   <a href="compte.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Votre compte<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="identification.html">Identifiez-vous</a></li>
+                    <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                        
+                      <!-- Identification -->
+                      <li class="dropdown-submenu"><a href="#" tabindex="-1">Identifiez-vous</a>
+                        <ul id="login-dp" class="dropdown-menu">
+                            <li>
+                                 <div class="row">
+                                        <div class="col-md-12">
+                                            S'identifier avec
+                                            <div class="social-buttons">
+                                                <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                                <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                                            </div>
+                                            ou
+                                             <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                                    <div class="form-group">
+                                                         <label class="sr-only">Adresse mail</label>
+                                                         <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                         <label class="sr-only">Mot de passe</label>
+                                                         <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                                         <div class="help-block text-right"><a href="">Mot de passe oublié ?</a></div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                         <button type="submit" class="btn btn-primary btn-block">Inscrivez vous</button>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                         <label>
+                                                         <input type="checkbox"> Garder ma session ouverte
+                                                         </label>
+                                                    </div>
+                                             </form>
+                                        </div>
+                                        <div class="bottom text-center">
+                                            Nouveau client ? <a href="#"><b>Rejoignez-nous</b></a>
+                                        </div>
+                                 </div>
+                            </li>
+                        </ul>
+                      </li>  
+                        
                       <li class="dropdown-header">Nouveau client ? <a href="inscription.html">Inscrivez-vous ici</a></li>
                       <li role="separator" class="divider"></li>
                       <li><a href="compte.html">Votre compte</a></li>
