@@ -118,6 +118,12 @@ body {
   font-size: 21px;
 }
 
+/* Chariot.html Plus/Minus Button
+----------------------------*/
+.chariot-center{
+    width: 150px;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
