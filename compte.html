@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.png">
+
+    <title>Multimedia World</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for carousel -->
+    <link href="css/carousel.css" rel="stylesheet">
+    
+    <!-- Advanced search -->
+    <link href="css/advancedsearch.css" rel="stylesheet">
+      
+    <!-- Multilevel dropdown -->
+    <link href="css/boostrap-multilevel-dropdown.css" rel="stylesheet">
+    
+    <!-- Login -->
+    <link href="css/login.css" rel="stylesheet">
+      
+    <!-- Compte -->
+    <link href="css/compte.css" rel="stylesheet">
+      
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="presentation.html">Présentation</a></li>
+                <li class="dropdown">
+                  <a href="catalogue.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Catalogue<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="catalogue-jazz.html">Jazz</a></li>
+                    <li><a href="catalogue-rock.html">Rock</a></li>
+                    <li><a href="catalogue-classique.html">Classique</a></li>
+                    <li><a href="catalogue-chansons-enfantines.html">Chansons enfantines</a></li>
+                  </ul>
+                </li>
+                <li class="active"><a href="nouveautes.html">Nouveautés</a></li>
+                <li class="dropdown">
+                  <a href="compte.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Votre compte<span class="caret"></span></a>
+                    <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                        
+                      <!-- Identification -->
+                      <li class="dropdown-submenu"><a href="#" tabindex="-1">Identifiez-vous</a>
+                        <ul id="login-dp" class="dropdown-menu">
+                            <li>
+                                 <div class="row">
+                                        <div class="col-md-12">
+                                            S'identifier avec
+                                            <div class="social-buttons">
+                                                <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                                <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                                            </div>
+                                            ou
+                                             <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                                    <div class="form-group">
+                                                         <label class="sr-only">Adresse mail</label>
+                                                         <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                         <label class="sr-only">Mot de passe</label>
+                                                         <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                                         <div class="help-block text-right"><a href="">Mot de passe oublié ?</a></div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                         <button type="submit" class="btn btn-primary btn-block">Connectez-vous</button>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                         <label>
+                                                         <input type="checkbox"> Garder ma session ouverte
+                                                         </label>
+                                                    </div>
+                                             </form>
+                                        </div>
+                                        <div class="bottom text-center">
+                                            Nouveau client ? <a href="inscription.html"><b>Rejoignez-nous</b></a>
+                                        </div>
+                                 </div>
+                            </li>
+                        </ul>
+                      </li>  
+                        
+                      <li class="dropdown-header">Nouveau client ? <a href="inscription.html">Inscrivez-vous ici</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="compte.html">Votre compte</a></li>
+                      <li><a href="commandes.html">Vos commandes </a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Professionnels<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="pro-register.html">Inscription pour professionnels</a></li>
+                    <li><a href="pro-espace.html">Espace professionnels</a></li>
+                  </ul>
+                </li> 
+                
+                <!-- Research advanced snippet -->
+                <li>
+                    <form class="navbar-form navbar-search" role="search">
+                        <div class="input-group">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-search btn-default dropdown-toggle" data-toggle="dropdown">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                    <span class="label-icon">Search</span>
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu pull-left" role="menu">
+                                   <li>
+                                        <a href="#">
+                                            <span class="glyphicon glyphicon-headphones"></span>
+                                            <span class="label-icon">Rechercher par Titre</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        <span class="glyphicon glyphicon-user"></span>
+                                        <span class="label-icon">Rechercher par Auteur </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        <span class="glyphicon glyphicon-music"></span>
+                                        <span class="label-icon">Rechercher par Type de Musique </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <input type="text" class="form-control">
+
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-search btn-default">
+                                GO
+                                </button>
+                            </div>
+                        </div>  
+                    </form>
+                </li>
+                <li>
+                    <a href="chariot.html" >
+                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                        <span class="label-icon">Chariot</span>
+                    </a>
+                </li>
+              </ul>
+                  
+              
+            </div>
+            
+          </div>
+        </nav>
+
+      </div>
+    </div>
+      
+    <!-- Votre Compte
+    ================================================== -->
+    <hr class="featurette-divider">
+    <div class="container">
+      
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1>Votre Compte</h1>
+      </div>
+        
+      <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="nav nav-pills nav-stacked admin-menu">
+                    <li class="active"><a href="#" data-target-id="general"><i class="fa fa-home fa-fw"></i>Général</a></li>
+                    <li><a href="#" data-target-id="Profile"><i class="fa fa-list-alt fa-fw"></i>Vos commandes</a></li>
+                    <li><a href="#" data-target-id="Settings"><i class="fa fa-cogs fa-fw"></i>Préférences</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9 well admin-content" id="general">
+                <p>Information générales du compte.</p>
+            </div>
+            <div class="col-md-9 well admin-content" id="Profile">
+                Liste des commandes précédentes
+            </div>
+            <div class="col-md-9 well admin-content" id="Settings">
+                Paramètres
+            </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+        
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2016 Multimedia World, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/compte.js"></script>
+  </body>
+</html>
