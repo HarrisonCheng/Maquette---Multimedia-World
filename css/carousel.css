@@ -23,6 +23,8 @@ body {
 .navbar-wrapper > .container {
   padding-right: 0;
   padding-left: 0;
+  
+  width:100%;
 }
 .navbar-wrapper .navbar {
   padding-right: 15px;
@@ -59,9 +61,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-    
-  height: auto;
-  width: 1200px;
+  width: 100%;
 }
 
 .carousel-inner .carousel-caption {
@@ -116,6 +116,18 @@ body {
 .jumbotron .btn {
   padding: 14px 24px;
   font-size: 21px;
+}
+
+/* Chariot.html Plus/Minus Button
+----------------------------*/
+.chariot-center{
+    width: 150px;
+}
+
+/* Color Green
+----------------------------*/
+.green{
+    color:green;
 }
 
 /* RESPONSIVE CSS
